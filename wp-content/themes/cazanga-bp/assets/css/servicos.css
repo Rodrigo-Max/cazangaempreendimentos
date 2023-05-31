@@ -1,0 +1,526 @@
+.bg-header{
+    background: url('../images/servicos/banner.png') center center no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.agencia-360{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.figital{
+    padding: 0;
+    margin: 100px auto;
+}
+.figital p{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.figital p.onoff{
+    margin-bottom: 50px;
+}
+.figital p.somos{
+    font-size: 42px;
+    line-height: 1.1;
+}
+.figital p.somos span{
+    position: relative;
+}
+.figital p.somos span::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100px;
+    height: 11px;
+    background-color: #f6db00;
+}
+
+@media (min-width: 768px){
+    .agencia-360{
+        font-size: 22px;
+    }
+    .figital p{
+        font-size: 21px;
+        letter-spacing: 10px;
+    }
+    .figital p.onoff{
+        margin-left: 5%;
+        margin-bottom: 50px;
+    }
+    .figital p.somos{
+        font-size: 48px;
+        line-height: 1.1;
+        letter-spacing: 12px;
+    }
+    .figital p.somos span::before{
+        top: -20px;
+        width: 140px;
+    }
+}
+@media (min-width: 992px){
+    .agencia-360{
+        font-size: 22px;
+    }
+    .figital p{
+        font-size: 24px;
+        letter-spacing: 10px;
+    }
+    .figital p.onoff{
+        margin-left: 10%;
+        margin-bottom: 50px;
+    }
+    .figital p.somos{
+        font-size: 60px;
+        line-height: 1.1;
+        letter-spacing: 12px;
+    }
+    .figital p.somos span::before{
+        top: -20px;
+        width: 180px;
+    }
+}
+@media (min-width: 1200px){
+    .agencia-360{
+        font-size: 25px;
+    }
+    .figital p{
+        font-size: 29.81px;
+        letter-spacing: 10px;
+    }
+    .figital p.onoff{
+        margin-left: 20%;
+        margin-bottom: 50px;
+    }
+    .figital p.somos{
+        font-size: 72.5px;
+        line-height: 1.1;
+        letter-spacing: 12px;
+    }
+    .figital p.somos span::before{
+        top: -20px;
+        width: 260px;
+    }
+}
+@media (min-width: 1600px){
+    .agencia-360{
+        font-size: 25px;
+    }
+    .figital p{
+        font-size: 29.81px;
+        letter-spacing: 10px;
+    }
+    .figital p.onoff{
+        margin-left: 23%;
+        margin-bottom: 50px;
+    }
+    .figital p.somos{
+        font-size: 72.5px;
+        line-height: 1.1;
+        letter-spacing: 12px;
+    }
+    .figital p.somos span::before{
+        top: -20px;
+        width: 260px;
+    }
+}
+
+#campanhas{
+    background-color: #fff;
+    padding: 50px 0;
+}
+#campanhas h2{
+    font-weight: 400;
+    color: #1a2e4a;
+    font-size: 26px;
+}
+#campanhas p{
+    color: #1a2e4a;
+    line-height: 120%;
+    font-size: 22px;
+}
+#campanhas img{
+    width: 120px;
+}
+
+.slick-servicos{margin-bottom: -6px; margin-top: 50px;}
+.slick-servicos .slick-prev, .slick-servicos .slick-next{position: absolute; top: 50%; margin-top: -15px; width: 40px; height: 40px; cursor: pointer; font-weight: 900; outline: none; background-color: transparent; color: #1a2e4a; opacity: 1; font-size: 38px; line-height: 24px; border: 0; padding: 0; text-align: center; transition: .2s; z-index: 200}
+.slick-servicos .slick-prev:hover, .slick-servicos .slick-next:hover{background-color: #ffff; color: #1a2e4a; opacity: 1;}
+.slick-servicos .slick-prev{left: 0px;}
+.slick-servicos .slick-next{right: 0px;}
+
+@media (min-width: 768px){
+    #campanhas{
+        padding: 100px 0 100px;
+    }
+    #campanhas h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #campanhas p{
+        font-size: 24px;
+    }
+    #campanhas img{
+        width: 140px;
+    }
+}
+@media (min-width: 992px){
+    #campanhas{
+        padding: 100px 0 100px;
+    }
+    #campanhas h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #campanhas p{
+        font-size: 30px;
+    }
+    #campanhas img{
+        width: 160px;
+    }
+}
+@media (min-width: 1200px){
+    #campanhas{
+        padding: 145px 0 100px;
+    }
+    #campanhas .container{
+        max-width: 1000px;
+    }
+    #campanhas h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #campanhas p{
+        font-size: 35px;
+    }
+    #campanhas img{
+        width: 200px;
+    }
+}
+@media (min-width: 1600px){
+    #campanhas{
+        padding: 145px 0 100px;
+    }
+    #campanhas .container{
+        max-width: 1000px;
+    }
+    #campanhas h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #campanhas p{
+        font-size: 35px;
+    }
+}
+
+#digital{
+    padding: 50px 0;
+    background: url('../images/servicos/bg-digital.png') center center no-repeat;
+    background-size: cover;
+}
+#digital h2{
+    font-weight: 400;
+    color: #1a2e4a;
+    font-size: 26px;
+}
+#digital p{
+    color: #1a2e4a;
+    line-height: 120%;
+    font-size: 22px;
+}
+#digital img{
+    width: 120px;
+}
+
+@media (min-width: 768px){
+    #digital{
+        padding: 100px 0 100px;
+    }
+    #digital h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #digital p{
+        font-size: 24px;
+    }
+    #digital img{
+        width: 140px;
+    }
+}
+@media (min-width: 992px){
+    #digital{
+        padding: 100px 0 100px;
+    }
+    #digital h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #digital p{
+        font-size: 30px;
+    }
+    #digital img{
+        width: 160px;
+    }
+}
+@media (min-width: 1200px){
+    #digital{
+        padding: 145px 0 100px;
+    }
+    #digital .container{
+        max-width: 1000px;
+    }
+    #digital h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #digital p{
+        font-size: 35px;
+    }
+    #digital img{
+        width: 200px;
+    }
+}
+@media (min-width: 1600px){
+    #digital{
+        padding: 145px 0 100px;
+    }
+    #digital .container{
+        max-width: 1000px;
+    }
+    #digital h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #digital p{
+        font-size: 35px;
+    }
+}
+
+#web{
+    background-color: #fff;
+    padding: 50px 0;
+}
+#web h2{
+    font-weight: 400;
+    color: #1a2e4a;
+    font-size: 26px;
+}
+#web p{
+    color: #1a2e4a;
+    line-height: 120%;
+    font-size: 22px;
+}
+#web img{
+    width: 120px;
+}
+
+@media (min-width: 768px){
+    #web{
+        padding: 100px 0 100px;
+    }
+    #web h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #web p{
+        font-size: 24px;
+    }
+    #web img{
+        width: 140px;
+    }
+}
+@media (min-width: 992px){
+    #web{
+        padding: 100px 0 100px;
+    }
+    #web h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #web p{
+        font-size: 30px;
+    }
+    #web img{
+        width: 160px;
+    }
+}
+@media (min-width: 1200px){
+    #web{
+        padding: 145px 0 100px;
+    }
+    #web .container{
+        max-width: 1000px;
+    }
+    #web h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #web p{
+        font-size: 35px;
+    }
+    #web img{
+        width: 200px;
+    }
+}
+@media (min-width: 1600px){
+    #web{
+        padding: 145px 0 100px;
+    }
+    #web .container{
+        max-width: 1000px;
+    }
+    #web h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #web p{
+        font-size: 35px;
+    }
+}
+
+#posicionamento{
+    padding: 50px 0;
+    background: url('../images/servicos/bg-digital.png') center center no-repeat;
+    background-size: cover;
+}
+#posicionamento h2{
+    font-weight: 400;
+    color: #1a2e4a;
+    font-size: 26px;
+}
+#posicionamento p{
+    color: #1a2e4a;
+    line-height: 120%;
+    font-size: 22px;
+}
+#posicionamento img{
+    width: 120px;
+}
+
+@media (min-width: 768px){
+    #posicionamento{
+        padding: 100px 0 100px;
+    }
+    #posicionamento h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #posicionamento p{
+        font-size: 24px;
+    }
+    #posicionamento img{
+        width: 140px;
+    }
+}
+@media (min-width: 992px){
+    #posicionamento{
+        padding: 100px 0 100px;
+    }
+    #posicionamento h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #posicionamento p{
+        font-size: 30px;
+    }
+    #posicionamento img{
+        width: 160px;
+    }
+}
+@media (min-width: 1200px){
+    #posicionamento{
+        padding: 145px 0 100px;
+    }
+    #posicionamento .container{
+        max-width: 1000px;
+    }
+    #posicionamento h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #posicionamento p{
+        font-size: 35px;
+    }
+    #posicionamento img{
+        width: 200px;
+    }
+}
+@media (min-width: 1600px){
+    #posicionamento{
+        padding: 145px 0 100px;
+    }
+    #posicionamento .container{
+        max-width: 1000px;
+    }
+    #posicionamento h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #posicionamento p{
+        font-size: 35px;
+    }
+}
+
+#proposito{
+    padding: 80px 0;
+    background-color: #1a2e4a;
+}
+#proposito p{
+    color: #fff;
+    font-size: 26px;
+}
+#proposito h2{
+    color: #f6db00;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+@media (min-width: 768px){
+    #proposito{
+        padding: 100px 0 80px;
+    }
+    #proposito p{
+        font-size: 30px;
+    }
+    #proposito h2{
+        font-size: 30px;
+    }
+}
+@media (min-width: 992px){
+    #proposito{
+        padding: 120px 0 100px;
+    }
+    #proposito p{
+        font-size: 30px;
+    }
+    #proposito h2{
+        font-size: 30px;
+    }
+}
+@media (min-width: 1200px){
+    #proposito{
+        padding: 170px 0 140px;
+    }
+    #proposito p{
+        font-size: 35px;
+    }
+    #proposito h2{
+        font-size: 35px;
+    }
+}
+@media (min-width: 1600px){
+    #proposito{
+        padding: 170px 0 140px;
+    }
+    #proposito p{
+        font-size: 35px;
+    }
+    #proposito h2{
+        font-size: 35px;
+    }
+}

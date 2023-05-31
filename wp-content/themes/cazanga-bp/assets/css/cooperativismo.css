@@ -1,0 +1,1484 @@
+article#page-100.page{padding-bottom: 0;}
+
+.title-cooperativismo{
+    background: #1a2e4a;
+    padding: 50px 15px;
+}
+.title-cooperativismo h1{
+    color: #f6db00;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 1;
+    margin: 0;
+    font-size: 36px;
+}
+.title-cooperativismo .slogan{
+    color: #00a091;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0 0;
+    font-size: 26px;
+}
+.title-cooperativismo .slogan-2{
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+#cooperativas-atendidas{padding: 50px 0;}
+#cooperativas-atendidas h2{
+    color: #1a2e4a;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 24px;
+}
+#cooperativas-atendidas h2 strong{font-weight: 800;}
+#cooperativas-atendidas .slick-carousel{padding: 0 50px; margin-top: 70px}
+#cooperativas-atendidas .slick-carousel .slick-prev, #cooperativas-atendidas .slick-carousel .slick-next{position: absolute; top: 50%; margin-top: -15px; width: 40px; height: 40px; cursor: pointer; outline: none; background-color: #fff; color: #162f49; opacity: .6; font-size: 24px; border: 0; padding: 5px 0 0; text-align: center; transition: .2s; z-index: 200}
+#cooperativas-atendidas .slick-carousel .slick-prev:hover, #cooperativas-atendidas .slick-carousel .slick-next:hover{background-color: #ffff; color: #162f49; opacity: 1;}
+#cooperativas-atendidas .slick-carousel .slick-prev{left: 0;}
+#cooperativas-atendidas .slick-carousel .slick-next{right: 0;}
+#cooperativas-atendidas .slick-carousel img.img-fluid{margin-top: 10px; margin-bottom: 10px}
+#cooperativas-atendidas .slick-carousel .item{padding: 10px;}
+
+#depoimentos{
+    background-color: #f1f1f1;
+    padding: 50px 0;
+}
+#depoimentos h2{
+    color: #1a2e4a;
+    line-height: 1.2;
+    font-weight: 900;
+    font-size: 28px;
+}
+#depoimentos .decolar{
+    color: #f6db00;
+    font-weight: 900;
+    margin: 0 0 10px;
+    font-size: 48px;
+}
+#depoimentos .ajudar{
+    color: #1a2e4a;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 80px 0 0;
+    font-size: 18px;
+}
+#depoimentos .falando{
+    color: #1a2e4a;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0;
+}
+
+.slick-depoimentos .slick-dots{margin: 0; padding: 0; list-style: none; text-align: center}
+.slick-depoimentos .slick-dots li{display: inline-block; margin: 0; padding: 0 4px;}
+.slick-depoimentos .slick-dots li button{background-color: #1a2e4a; width: 20px; height: 5px; border: 0; outline: none; font-size: 0; opacity: .5; text-indent: -9999px; cursor: pointer}
+.slick-depoimentos .slick-dots li.slick-active button{opacity: 1;}
+
+.depoente p{line-height: 1.3; font-weight: 300; color: #fff; font-family: 'Nunito', sans-serif; font-size: 12px;}
+.depoente p strong{color: #ffdd00; font-family: 'Nunito', sans-serif; font-size: 14px;}
+.depoente img{max-width: 90px;}
+
+.depoimento{padding: 30px 30px 10px; border-radius: 20px; background-image: url('../images/bg-depoimentos.png'); background-position: top center; background-repeat: repeat; background-size: cover}
+.depoimento blockquote{display: block; padding: 15px 20px; margin: 0; font-weight: 300; font-family: 'Nunito', sans-serif; font-size: 16px;}
+.depoimento blockquote:before{content: '“'; position: absolute; left: -20px; top: -10px; font-size: 60px; font-weight: 900; color: #ffdd00; font-family: 'Nunito', sans-serif;}
+.depoimento blockquote:after{content: '”'; position: absolute; right: -5px; bottom: -20px; font-size: 60px; font-weight: 900; color: #ffdd00; font-family: 'Nunito', sans-serif;}
+
+#lista-depoimentos{margin-top: 80px;}
+#lista-depoimentos .espelho{display: none}
+
+#campanhas{
+    padding: 50px 0;
+}
+#campanhas h2{
+    display: block;
+    position: relative;
+    color: #1a2e4a;
+    font-weight: 700;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+#campanhas h2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 310px;
+    max-width: 100%;
+    height: 15px;
+    background-color: #f6db00;
+    z-index: -1;
+}
+#campanhas p{
+    color: #1a2e4a;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 30px 0 0;
+    font-size: 16px;
+}
+#campanhas .galeria{display: none;}
+#campanhas .galeria img{
+    margin-bottom: 10px;
+}
+#campanhas .slick-galeria{margin-top: 50px;}
+
+#endomarketing{
+    padding: 0 0 50px;
+}
+#endomarketing h2{
+    display: block;
+    position: relative;
+    color: #1a2e4a;
+    font-weight: 700;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+#endomarketing h2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    max-width: 100%;
+    height: 15px;
+    background-color: #f6db00;
+    z-index: -1;
+}
+#endomarketing p{
+    color: #1a2e4a;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 16px;
+    margin: 30px 0 0;
+}
+#endomarketing .galeria{display: none;}
+#endomarketing .galeria img{
+    margin-bottom: 10px;
+}
+#endomarketing .slick-galeria{margin-top: 50px;}
+
+#produtos{
+    background-color: #1a2e4a;
+    padding: 50px 0 0;
+}
+#produtos h2{
+    display: block;
+    position: relative;
+    color: #f6db00;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 1.3;
+    font-size: 32px;
+}
+#produtos p{
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 16px;
+    margin: 30px 0 0;
+}
+#produtos .feed{
+    margin-top: 60px;
+}
+
+#produtos .slick-galeria{margin-top: 50px;}
+#produtos .slick-galeria .slick-prev, #produtos .slick-galeria .slick-next{color: #fff;}
+#produtos .slick-galeria .slick-prev:hover, #produtos .slick-galeria .slick-next:hover{color: #1a2e4a;}
+
+#relatorios{
+    padding: 50px 0 0;
+}
+#relatorios h2{
+    display: block;
+    position: relative;
+    color: #1a2e4a;
+    font-weight: 700;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 32px;
+}
+#relatorios h2::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 215px;
+    max-width: 100%;
+    height: 15px;
+    background-color: #f6db00;
+    z-index: -1;
+}
+#relatorios p{
+    color: #1a2e4a;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 30px 0;
+    font-size: 16px;
+}
+
+#relatorios .slick-galeria .slick-prev, #relatorios .slick-galeria .slick-next{color: #fff;}
+#relatorios .slick-galeria .slick-prev:hover, #relatorios .slick-galeria .slick-next:hover{color: #1a2e4a;}
+
+#comercial{
+    padding: 50px 0;
+    background-color: #fff;
+}
+#comercial h2{
+    color: #1a2e4a;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 32px;
+    margin: 0 0 50px;
+}
+
+#hotsite{
+    padding: 50px 0;
+    background-color: #1a2e4a;
+}
+#hotsite h2{
+    color: #f6db00;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 32px;
+}
+#hotsite p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 30px 0 0;
+}
+
+#midias-sociais{
+    padding: 50px 0 0;
+}
+#midias-sociais h2{
+    color: #1a2e4a;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 32px;
+}
+#midias-sociais p{
+    color: #1a2e4a;
+    font-size: 14px;
+    line-height: 1.2;
+    font-size: 16px;
+    margin: 30px 0 0;
+}
+#midias-sociais .galeria{display: none;}
+#midias-sociais .galeria img{
+    margin-bottom: 16px;
+}
+#midias-sociais .slick-galeria{margin-top: 50px;}
+#midias-sociais p.texto-amarelo{
+    color: #f6db00;
+}
+
+#midias-sociais .slick-galeria .slick-prev, #midias-sociais .slick-galeria .slick-next{color: #fff;}
+#midias-sociais .slick-galeria .slick-prev:hover, #midias-sociais .slick-galeria .slick-next:hover{color: #1a2e4a;}
+
+#sinalizacao{
+    padding: 50px 0 0;
+}
+#sinalizacao h2{
+    color: #1a2e4a;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 50px;
+    font-size: 24px;
+}
+
+.slick-galeria{margin-bottom: -6px;}
+.slick-galeria .slick-prev, .slick-galeria .slick-next{position: absolute; top: 50%; margin-top: -15px; width: 40px; height: 40px; cursor: pointer; outline: none; background-color: transparent; color: #162f49; opacity: .6; font-size: 24px; border: 0; padding: 5px 0 0; text-align: center; transition: .2s; z-index: 200}
+.slick-galeria .slick-prev:hover, .slick-galeria .slick-next:hover{background-color: #ffff; color: #162f49; opacity: 1;}
+.slick-galeria .slick-prev{left: 0;}
+.slick-galeria .slick-next{right: 0;}
+.slick-galeria .item{padding: 0; margin: 0;}
+
+.bt-cta-1{display: block; font-size: 18px; padding: 20px 30px; color: #162f49; background-color: #f6db00; text-align: center; border-radius: 10px; text-decoration: none; font-weight: 700; margin-top: 30px; line-height: 1.2; transition: .15s;}
+.bt-cta-1:hover{color: #f6db00; background-color: #162f49; text-decoration: none;}
+
+.bt-cta-2{display: block; font-size: 18px; padding: 20px 30px; color: #162f49; background-color: #f6db00; text-align: center; text-decoration: none; font-weight: 700; margin: 0; line-height: 1.2; transition: .15s;}
+.bt-cta-2:hover{color: #212529; background-color: #b4b4b5; text-decoration: none;}
+
+@media (max-width: 767px) {
+    #midias-sociais p.texto-amarelo{
+        margin-left: -15px;
+        margin-right: -15px;
+        background-color: #1a2e4a;
+        padding: 30px 15px;
+    }
+}
+@media (min-width: 768px) {
+    .title-cooperativismo{
+        padding: 50px 15px 50px;
+    }
+    .title-cooperativismo h1{
+        font-size: 48px;
+        letter-spacing: 12px;
+    }
+    .title-cooperativismo .slogan{
+        font-size: 40px;
+    }
+    .title-cooperativismo .slogan-2{
+        font-size: 22px;
+        letter-spacing: 7px;
+    }
+
+    #cooperativas-atendidas{
+        padding: 60px 0;
+    }
+    #cooperativas-atendidas h2{
+        font-size: 24px;
+        letter-spacing: 5px;
+    }
+    
+    #depoimentos{
+        padding: 80px 0 0px;
+    }
+    #depoimentos h2{
+        font-size: 38px;
+        margin-right: 70px;
+        margin-top: 70px;
+    }
+    #lista-depoimentos{
+        margin-top: 55px;
+    }
+    .depoimento{padding: 30px 15px 15px;}
+    #depoimentos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+    }
+    #depoimentos .container-decolar{
+        padding-top: 80px;
+        padding-left: 0;
+    }
+    #depoimentos .decolar{
+        font-size: 120px;
+        line-height: 120px;
+    }
+    #depoimentos .ajudar{
+        margin: 0;
+        font-size: 24px;
+    }
+    #depoimentos .falando{
+        font-size: 24px;
+    }
+    .bt-cta-1{
+        font-size: 18px;
+    }
+
+    #campanhas{
+        padding: 0 0 50px;
+    }
+    #campanhas h2{
+        width: 490px;
+        font-size: 50px;
+        letter-spacing: 10px;
+        line-height: 70px;
+        padding: 0 17px;
+        margin: 50px 0 0 0;
+    }
+    #campanhas h2::before{
+        width: 100%;
+        height: 38px;
+        z-index: -1;
+    }
+    #campanhas p{
+        font-size: 20px;
+        width: 100%;
+        margin: 30px 0 0 12px;
+    }
+    #campanhas p.texto-1{
+        margin-top: 40px;
+    }
+
+    #campanhas .galeria{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+    #campanhas .slick-galeria{display: none;}
+    #campanhas .galeria .row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #campanhas .galeria .row .col-6{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #endomarketing{
+        padding: 0 0 50px;
+    }
+    #endomarketing h2{
+        width: 490px;
+        font-size: 50px;
+        letter-spacing: 5px;
+        line-height: 70px;
+        padding: 0 15px;
+        margin: 30px 0 0 0;
+    }
+    #endomarketing h2::before{
+        width: 100%;
+        height: 35px;
+        z-index: -1;
+    }
+    #endomarketing p{
+        font-size: 20px;
+        width: 100%;
+        margin: 30px 0 0 17px;
+    }
+    #endomarketing p.texto-1{
+        margin-top: 45px;
+    }
+    #endomarketing .galeria{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+    #endomarketing .slick-galeria{display: none;}
+    #endomarketing .galeria .row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #endomarketing .galeria .row .col-6{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #produtos{
+        padding: 70px 0 0;
+    }
+    #produtos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 46px;
+        background-color: #fff;
+    }
+    #produtos h2{
+        font-size: 50px;
+        padding-left: 0;
+        letter-spacing: 10px;
+    }
+    #produtos p{
+        width: 100%;
+        padding-left: 0;
+        font-size: 20px;
+    }
+
+    #relatorios h2{
+        font-size: 50px;
+        letter-spacing: 10px;
+        line-height: 66px;
+        padding: 0 17px;
+        margin: 50px 0 0 0;
+    }
+    #relatorios h2::before{
+        top: 30px;
+        width: 410px;
+        height: 35px;
+        z-index: -1;
+    }
+    #relatorios p{
+        width: 100%;
+        padding-left: 17px;
+        font-size: 20px;
+        margin: 30px 0 80px;
+    }
+    
+    .bt-cta-2{
+        font-size: 18px;
+    }
+
+    #comercial{
+        padding: 90px 0 60px;
+    }
+    #comercial h2{
+        font-size: 28px;
+        width: 100%;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+
+    #hotsite{
+        padding: 90px 0 60px;
+    }
+    #hotsite h2{
+        font-size: 28px;
+        width: 100%;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+    #hotsite p{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+    #midias-sociais{
+        padding: 80px 0 50px;
+    }
+    #midias-sociais h2{
+        font-size: 32px;
+        width: 100%;
+        letter-spacing: 10px;
+        margin: 0;
+    }
+    #midias-sociais p{
+        font-size: 20px;
+        margin: 30px 0 0 0;
+        width: 100%;
+    }
+    #midias-sociais p.texto-2{
+        margin-bottom: 50px;
+    }
+    #midias-sociais .galeria{
+        display: block;
+        width: 100%;
+    }
+    #midias-sociais .slick-galeria{display: none;}
+    #midias-sociais .galeria .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    #midias-sociais .galeria .row .col-6{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #midias-sociais p.texto-amarelo{
+        margin: 50px 0 0 0;
+        width: 100%;
+    }
+    #midias-sociais .bg-azul{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 170px;
+        background-color: #1a2e4a;
+        z-index: -1;
+    }
+    
+    #sinalizacao{
+        padding: 60px 0 0;
+    }
+    #sinalizacao h2{
+        margin-bottom: 60px;
+        font-size: 28px;
+        letter-spacing: 10px;
+    }
+}
+@media (min-width: 992px) {
+    .title-cooperativismo{
+        background-image: url('../images/cooperativismo/bg-topo.png');
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        padding-left: 43.2291%;
+        height: 470px;
+        padding-top: 100px;
+        padding-bottom: 0;
+        background-size: 40%;
+    }
+    .title-cooperativismo h1{
+        font-size: 48px;
+        letter-spacing: 12px;
+    }
+    .title-cooperativismo .slogan{
+        font-size: 40px;
+    }
+    .title-cooperativismo .slogan-2{
+        font-size: 22px;
+        letter-spacing: 7px;
+    }
+
+    #cooperativas-atendidas{
+        padding: 100px 0;
+    }
+    #cooperativas-atendidas h2{
+        font-size: 24px;
+        letter-spacing: 10px;
+    }
+    
+    #depoimentos{
+        padding: 105px 0 50px;
+    }
+    #depoimentos h2{
+        font-size: 48px;
+        margin-right: 70px;
+        margin-top: 140px;
+    }
+    #lista-depoimentos{
+        margin-top: 100px;
+    }
+    #depoimentos .depoimento{
+        max-width: 713px;
+    }
+    #depoimentos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        background-color: #fff;
+    }
+    #depoimentos .container-decolar{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    #depoimentos .decolar{
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        font-size: 120px;
+        line-height: 120px;
+    }
+    #depoimentos .decolar span{
+        display: block;
+        margin-left: 75px;
+    }
+    #depoimentos .ajudar{
+        position: absolute;
+        left: 0px;
+        top: 160px;
+        font-size: 24px;
+    }
+    #depoimentos .falando{
+        position: absolute;
+        left: 80px;
+        top: 400px;
+        font-size: 24px;
+    }
+    #lista-depoimentos .embed-responsive{max-width: 800px;}
+    .bt-cta-1{
+        font-size: 20px;
+        max-width: 800px;
+    }
+
+    #campanhas{
+        padding: 30px 0 50px;
+    }
+    #campanhas h2{
+        width: 100%;
+        font-size: 46px;
+        letter-spacing: 10px;
+        line-height: 60px;
+        padding: 0 15px;
+        margin: 100px 0 0 0;
+    }
+    #campanhas h2::before{
+        height: 32px;
+        z-index: -1;
+    }
+    #campanhas p{
+        font-size: 23px;
+        width: 100%;
+        margin: 30px 0 0 12px;
+    }
+    #campanhas p.texto-1{
+        margin-top: 40px;
+    }
+
+    #campanhas .galeria{
+        margin-left: auto;
+        width: 100%;
+        margin-top: 0;
+    }
+    #campanhas .galeria .row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #campanhas .galeria .row .col-6{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #endomarketing{
+        padding: 0 0 50px;
+    }
+    #endomarketing h2{
+        width: 100%;
+        font-size: 46px;
+        letter-spacing: 5px;
+        line-height: 60px;
+        padding: 0 15px;
+        margin: 30px 0 0 0;
+    }
+    #endomarketing h2::before{
+        height: 35px;
+        z-index: -1;
+    }
+    #endomarketing p{
+        font-size: 23px;
+        width: 100%;
+        margin: 30px 0 0 17px;
+    }
+    #endomarketing p.texto-1{
+        margin-top: 45px;
+    }
+    #endomarketing .galeria{
+        width: 100%;
+    }
+    #endomarketing .galeria .row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #endomarketing .galeria .row .col-6{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #produtos{
+        padding: 70px 0 0;
+    }
+    #produtos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 62px;
+        background-color: #fff;
+    }
+    #produtos h2{
+        font-size: 50px;
+        padding-left: 0;
+        letter-spacing: 10px;
+    }
+    #produtos p{
+        width: 420px;
+        padding-left: 0;
+        font-size: 22px;
+    }
+    #produtos .folder{
+        position: absolute;
+        right: 0;
+        top: -10px;
+        width: 55%;
+        height: auto;
+    }
+
+    #relatorios .jornal{
+        position: absolute;
+        right: 0;
+        top: -62px;
+        z-index: 200;
+        width: 45%;
+        height: auto;
+    }
+    #relatorios h2{
+        font-size: 50px;
+        letter-spacing: 10px;
+        line-height: 66px;
+        padding: 0 17px;
+        margin: 50px 0 0 0;
+    }
+    #relatorios h2::before{
+        top: 30px;
+        width: 410px;
+        height: 35px;
+        z-index: -1;
+    }
+    #relatorios p{
+        width: 65%;
+        padding-left: 17px;
+        font-size: 22px;
+        margin: 30px 0 80px;
+    }
+    
+    .bt-cta-2{
+        font-size: 20px;
+    }
+
+    #comercial{
+        padding: 90px 0 60px;
+    }
+    #comercial h2{
+        font-size: 32px;
+        width: 100%;
+        letter-spacing: 5px;
+        margin: 50px 0 0;
+    }
+    
+    #hotsite{
+        padding: 90px 0 60px;
+    }
+    #hotsite h2{
+        font-size: 32px;
+        width: 100%;
+        letter-spacing: 5px;
+        margin: 50px 0 0;
+    }
+    #hotsite p{
+        font-size: 22px;
+        margin-top: 40px;
+    }
+    
+    #midias-sociais{
+        padding: 80px 0 50px;
+    }
+    #midias-sociais h2{
+        font-size: 32px;
+        width: 100%;
+        letter-spacing: 10px;
+        margin: 0;
+    }
+    #midias-sociais p{
+        font-size: 20px;
+        margin: 30px 0 0 0;
+        width: 95%;
+    }
+    #midias-sociais p.texto-2{
+        margin-bottom: 50px;
+    }
+    #midias-sociais .galeria{
+        width: 100%;
+    }
+    #midias-sociais .galeria .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    #midias-sociais .galeria .row .col-6{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #midias-sociais p.texto-amarelo{
+        margin: -50px 0 0 0;
+        width: 45%;
+    }
+    #midias-sociais .bg-azul{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 170px;
+        background-color: #1a2e4a;
+        z-index: -1;
+    }
+    
+    #sinalizacao{
+        padding: 60px 0 0;
+    }
+    #sinalizacao h2{
+        margin-bottom: 60px;
+        font-size: 32px;
+        letter-spacing: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title-cooperativismo{
+        background-image: url('../images/cooperativismo/bg-topo.png');
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        padding-left: 43.2291%;
+        height: 550px;
+        padding-top: 120px;
+        background-size: 40%;
+    }
+    .title-cooperativismo h1{
+        font-size: 58px;
+        letter-spacing: 15px;
+    }
+    .title-cooperativismo .slogan{
+        font-size: 52px;
+    }
+    .title-cooperativismo .slogan-2{
+        font-size: 27px;
+        letter-spacing: 7px;
+    }
+
+    #cooperativas-atendidas{
+        padding: 100px 0;
+    }
+    #cooperativas-atendidas h2{
+        font-size: 26px;
+        letter-spacing: 10px;
+    }
+    
+    #depoimentos{
+        padding: 105px 0 0px;
+    }
+    #depoimentos h2{
+        font-size: 52px;
+        margin-right: 70px;
+        margin-top: 140px;
+    }
+    #lista-depoimentos{
+        margin-top: 100px;
+    }
+    #lista-depoimentos .espelho{display: block;}
+    #depoimentos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background-color: #fff;
+    }
+    #depoimentos .container-decolar{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    #depoimentos .decolar{
+        position: absolute;
+        left: 320px;
+        top: 20px;
+        font-size: 140px;
+        line-height: 140px;
+    }
+    #depoimentos .decolar span{
+        display: block;
+        margin-left: 90px;
+    }
+    #depoimentos .ajudar{
+        position: absolute;
+        left: 270px;
+        top: 189px;
+        font-size: 24px;
+    }
+    #depoimentos .falando{
+        position: absolute;
+        left: 320px;
+        top: 450px;
+        font-size: 24px;
+    }
+    #lista-depoimentos .embed-responsive{max-width: 800px;}
+    .bt-cta-1{
+        font-size: 20px;
+        max-width: 800px;
+    }
+
+    #campanhas{
+        padding: 10px 0 50px;
+    }
+    #campanhas h2{
+        width: 550px;
+        font-size: 58px;
+        letter-spacing: 10px;
+        line-height: 78px;
+        padding: 0 17px;
+        margin: 100px 0 0 0;
+    }
+    #campanhas h2::before{
+        height: 42px;
+        z-index: -1;
+    }
+    #campanhas p{
+        font-size: 24px;
+        width: 510px;
+        margin: 30px 0 0 12px;
+    }
+    #campanhas p.texto-1{
+        margin-top: 40px;
+    }
+
+    #campanhas .galeria{
+        margin-left: auto;
+        width: 100%;
+    }
+    #campanhas .galeria .row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #campanhas .galeria .row .col-6{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #endomarketing{
+        padding: 0 0 50px;
+    }
+    #endomarketing h2{
+        width: 100%;
+        font-size: 56px;
+        letter-spacing: 10px;
+        line-height: 78px;
+        padding: 0 17px;
+        margin: 30px 0 0 0;
+    }
+    #endomarketing h2::before{
+        height: 42px;
+        z-index: -1;
+    }
+    #endomarketing p{
+        font-size: 24px;
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+    #endomarketing p.texto-1{
+        margin-top: 45px;
+    }
+    #endomarketing .galeria{
+        width: 100%;
+    }
+    #endomarketing .galeria .row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #endomarketing .galeria .row .col-6{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #produtos{
+        padding: 70px 0 0;
+    }
+    #produtos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #fff;
+    }
+    #produtos h2{
+        font-size: 58px;
+        padding-left: 0;
+        letter-spacing: 15px;
+    }
+    #produtos p{
+        width: 480px;
+        padding-left: 0;
+        font-size: 24px;
+    }
+    #produtos .folder{
+        position: absolute;
+        right: 0;
+        top: -19px;
+        width: 50%;
+        height: auto;
+    }
+
+    #relatorios .jornal{
+        position: absolute;
+        right: 0;
+        top: -80px;
+        z-index: 200;
+        width: 50%;
+        height: auto;
+    }
+    #relatorios h2{
+        font-size: 58px;
+        letter-spacing: 10px;
+        line-height: 78px;
+        padding: 0 17px;
+        margin: 50px 0 0 0;
+    }
+    #relatorios h2::before{
+        top: 37px;
+        width: 450px;
+        height: 42px;
+        z-index: -1;
+    }
+    #relatorios p{
+        width: 65%;
+        padding-left: 17px;
+        font-size: 24px;
+        margin: 50px 0 80px;
+    }
+    
+    #comercial{
+        padding: 90px 0 60px;
+    }
+    #comercial h2{
+        font-size: 40px;
+        width: 100%;
+        letter-spacing: 10px;
+        margin: 50px 0 0;
+    }
+    
+    #hotsite{
+        padding: 90px 0 60px;
+    }
+    #hotsite h2{
+        font-size: 40px;
+        width: 100%;
+        letter-spacing: 10px;
+        margin: 50px 0 0;
+    }
+    #hotsite p{
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    
+    #midias-sociais{
+        padding: 80px 0 80px;
+    }
+    #midias-sociais h2{
+        font-size: 40px;
+        width: 100%;
+        letter-spacing: 10px;
+        margin: 0;
+    }
+    #midias-sociais p{
+        font-size: 24px;
+        margin: 30px 0 0 0;
+        width: 90%;
+    }
+    #midias-sociais p.texto-2{
+        margin-bottom: 50px;
+    }
+    #midias-sociais .galeria{
+        width: 100%;
+    }
+    #midias-sociais .galeria .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    #midias-sociais .galeria .row .col-6{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #midias-sociais p.texto-amarelo{
+        margin: -100px 0 0 0;
+        width: 50%;
+    }
+    #midias-sociais .bg-azul{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background-color: #1a2e4a;
+        z-index: -1;
+    }
+    
+    #sinalizacao{
+        padding: 60px 0 0;
+    }
+    #sinalizacao h2{
+        margin-bottom: 60px;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+    /*#depoimentos .depoimento{
+        margin-top: 130px;
+    }*/
+    #produtos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 89px;
+        background-color: #fff;
+    }
+    #relatorios .jornal{
+        position: absolute;
+        right: 0;
+        top: -88px;
+        z-index: 200;
+        width: 50%;
+        height: auto;
+    }
+}
+@media (min-width: 1600px) {
+    .title-cooperativismo{
+        background-image: url('../images/cooperativismo/bg-topo.png');
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        padding-left: 43.2291%;
+        height: 712px;
+        padding-top: 190px;
+    }
+    .title-cooperativismo h1{
+        font-size: 63.91px;
+        letter-spacing: 17px;
+    }
+    .title-cooperativismo .slogan{
+        font-size: 59.08px;
+    }
+    .title-cooperativismo .slogan-2{
+        font-size: 27px;
+        letter-spacing: 7px;
+    }
+
+    #cooperativas-atendidas{
+        padding: 100px 0;
+    }
+    #cooperativas-atendidas h2{
+        font-size: 26.1px;
+        letter-spacing: 10px;
+    }
+    
+    #depoimentos{
+        padding: 105px 0 0px;
+    }
+    #depoimentos h2{
+        font-size: 59.08px;
+        margin-right: 30px;
+        margin-top: 140px;
+    }
+    #lista-depoimentos{
+        margin-top: 55px;
+    }
+    #lista-depoimentos .espelho{display: block;}
+    #depoimentos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background-color: #fff;
+    }
+    #depoimentos .container-decolar{
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+    #depoimentos .decolar{
+        position: absolute;
+        left: 435px;
+        top: 20px;
+        font-size: 164px;
+        line-height: 140px;
+    }
+    #depoimentos .decolar span{
+        display: block;
+        margin-left: 97px;
+    }
+    #depoimentos .ajudar{
+        position: absolute;
+        left: 370px;
+        top: 180px;
+        font-size: 26px;
+    }
+    #depoimentos .falando{
+        position: absolute;
+        left: 466px;
+        top: 450px;
+        font-size: 26px;
+    }
+    #lista-depoimentos .embed-responsive{max-width: 800px;}
+    .bt-cta-1{
+        font-size: 24px;
+        max-width: 800px;
+    }
+
+    #campanhas{
+        padding: 0 0 50px;
+    }
+    #campanhas h2{
+        width: 650px;
+        font-size: 63.91px;
+        letter-spacing: 16px;
+        line-height: 85px;
+        padding: 0 17px;
+        margin: 100px 0 0 145px;
+    }
+    #campanhas h2::before{
+        height: 45px;
+        z-index: -1;
+    }
+    #campanhas p{
+        font-size: 28.07px;
+        width: 510px;
+        margin: 30px 0 0 162px;
+    }
+    #campanhas p.texto-1{
+        margin-top: 70px;
+    }
+
+    #campanhas .galeria{
+        margin-left: auto;
+        width: 648px;
+    }
+    #campanhas .galeria .row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #campanhas .galeria .row .col-6{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #endomarketing{
+        padding: 0 0 50px;
+    }
+    #endomarketing h2{
+        width: 100%;
+        max-width: 725px;
+        font-size: 63.91px;
+        letter-spacing: 15px;
+        line-height: 85px;
+        padding: 0 17px;
+        margin: 100px 0 0 70px;
+    }
+    #endomarketing h2::before{
+        height: 45px;
+        z-index: -1;
+    }
+    #endomarketing p{
+        font-size: 28.07px;
+        width: 510px;
+        margin: 30px 0 0 75px;
+    }
+    #endomarketing p.texto-1{
+        margin-top: 45px;
+    }
+    #endomarketing .galeria{
+        width: 784px;
+    }
+    #endomarketing .galeria .row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #endomarketing .galeria .row .col-6{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #produtos{
+        padding: 70px 0 0;
+    }
+    #produtos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 102px;
+        background-color: #fff;
+    }
+    #produtos h2{
+        font-size: 63.91px;
+        padding-left: 75px;
+        letter-spacing: 15px;
+    }
+    #produtos p{
+        width: 530px;
+        padding-left: 75px;
+        font-size: 28px;
+    }
+    #produtos .folder{
+        position: absolute;
+        right: 0;
+        top: -19px;
+        width: 60%;
+    }
+
+    #relatorios .jornal{
+        position: absolute;
+        right: 0;
+        top: -102px;
+        width: 810px;
+        z-index: 200;
+    }
+    #relatorios h2{
+        font-size: 63.91px;
+        letter-spacing: 16px;
+        line-height: 85px;
+        padding: 0 17px;
+        margin: 50px 0 0 90px;
+    }
+    #relatorios h2::before{
+        top: 37px;
+        width: 540px;
+        height: 45px;
+        z-index: -1;
+    }
+    #relatorios p{
+        width: 930px;
+        padding-left: 100px;
+        font-size: 28px;
+        margin: 50px 0 80px;
+    }
+    
+    .bt-cta-2{
+        font-size: 24px;
+    }
+    
+    #hotsite{
+        padding: 90px 0 60px;
+    }
+    #hotsite h2{
+        font-size: 43.55px;
+        width: 650px;
+        letter-spacing: 12px;
+        margin: 50px 0 0;
+    }
+    #hotsite p{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    
+    #midias-sociais{
+        padding: 80px 0 80px;
+    }
+    #midias-sociais h2{
+        font-size: 43.55px;
+        width: 650px;
+        letter-spacing: 12px;
+        margin: 0 0 0 95px;
+    }
+    #midias-sociais p{
+        font-size: 28px;
+        margin: 30px 0 0 95px;
+        width: 610px;
+    }
+    #midias-sociais p.texto-2{
+        margin-bottom: 50px;
+    }
+    #midias-sociais .galeria{
+        width: 695px;
+    }
+    #midias-sociais .galeria .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    #midias-sociais .galeria .row .col-6{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #midias-sociais p.texto-amarelo{
+        margin: -150px 0 0 95px;
+        width: 610px;
+    }
+    #midias-sociais .bg-azul{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 265px;
+        background-color: #1a2e4a;
+        z-index: -1;
+    }
+    
+    #sinalizacao{
+        padding: 60px 0 0;
+    }
+    #sinalizacao h2{
+        margin-bottom: 60px;
+        font-size: 43.55px;
+        letter-spacing: 16px;
+    }
+}
+@media (min-width: 1800px) {
+    #produtos .bg-branco{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 112px;
+        background-color: #fff;
+    }
+
+    #relatorios .jornal{
+        position: absolute;
+        right: 0;
+        top: -112px;
+        width: 810px;
+        z-index: 200;
+    }
+}

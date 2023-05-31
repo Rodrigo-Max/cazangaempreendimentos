@@ -1,0 +1,25 @@
+
+html,body,a,article,button,dd,del,div,dl,footer,h1,h2,h3,h4,h5,h6,header,input,ins,li,nav,p,section,select,span,strong,td,th,textarea,ul,time,aside{font-family: 'Lato', sans-serif}
+
+body{background-color: #093153}
+
+h1{display: block; width: 180px; height: 48px; margin: 70px auto 40px; padding: 0; background: url('../images/logo.png') center center no-repeat; background-size: contain; text-indent: -9999px;}
+
+.endereco, .contato{color: #FFF; font-size: 16px}
+.contato a{color: #FFF; text-decoration: none;  transition: 300ms all linear;}
+.contato a:hover{color: #f7d600; text-decoration: none}
+
+.social{color: #FFF; font-size: 32px}
+.social a{margin-left: 5px; margin-right: 5px; color: #fff; transition: 300ms all linear;}
+.social a:hover{color: #f7d600; text-decoration: none}
+
+
+@media (min-width: 576px){
+    h1{width: 220px; height: 59px;}
+}
+@media(min-width:768px){
+    h1{width: 280px; height: 75px;}
+}
+@media(min-width:992px){
+    h1{width: 360px; height: 96px;}
+}
