@@ -163,9 +163,9 @@
         #login h1 a, .login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png);
             padding-bottom: 0;
-			background-size: 118px 45px;
-			width: 118px;
-			height: 45px;
+			background-size: 150px 37px;
+			width: 150px;
+			height: 37px;
         }
     </style>
 <?php }

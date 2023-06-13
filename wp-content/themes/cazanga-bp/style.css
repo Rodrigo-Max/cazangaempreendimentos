@@ -522,12 +522,12 @@ article.page .entry .margin-bottom-10, article.post .entry .margin-bottom-10{mar
 :-ms-input-placeholder {color: #7c7c7c;}
 
 ::selection {
-  background: #ffdd00; /* WebKit/Blink Browsers */
-  color: #162f49;
+  background: #183e65; /* WebKit/Blink Browsers */
+  color: #fff;
 }
 ::-moz-selection {
-  background: #ffdd00; /* Gecko Browsers */
-  color: #162f49;
+  background: #183e65; /* Gecko Browsers */
+  color: #fff;
 }
 *{outline-color: transparent}
 
