@@ -5,12 +5,13 @@ Theme URI: http://www.bp360.com.br/
 Author: Agência BluePause
 Author URI: http://www.bp360.com.br/
 Description: Tema desenvolvido de forma persolizada para a Cazanga Empreendimentos pela Agência BluePause
-Version: 0.0.2
+Version: 0.0.4
 */
 html,body,a,article,button,dd,del,div,dl,footer,address,h1,h2,h3,h4,h5,h6,header,input,ins,li,nav,p,section,select,span,strong,td,th,textarea,ul,time,aside{font-family: 'Nexa', sans-serif;}
 
 body{background-color: #fff;}
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-weight: 600;}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-weight: 700;}
+strong{font-weight: 900;}
 
 /* Geral */
 .container.custom-container{padding-left: 10px; padding-right: 10px;}

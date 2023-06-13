@@ -1,5 +1,5 @@
 <?php
-	define('BP_VERSION', '0.0.2');
+	define('BP_VERSION', '0.0.4');
 
 	if ( is_admin() ){
 		require_once('admin/settings.php');
