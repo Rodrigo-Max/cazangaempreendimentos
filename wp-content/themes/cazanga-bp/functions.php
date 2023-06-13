@@ -1,5 +1,5 @@
 <?php
-	define('BP_VERSION', '0.0.8');
+	define('BP_VERSION', '0.0.2');
 
 	if ( is_admin() ){
 		require_once('admin/settings.php');
@@ -195,17 +195,18 @@
 		// Fonts
 		wp_dequeue_style( 'fontawesome' );
 		wp_register_style('noto-sans-jp', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;600;700;800;900&display=swap"', false, BP_VERSION);
+		wp_register_style('nexa', get_stylesheet_directory_uri().'/assets/fonts/stylesheet.css', false, BP_VERSION);
 		
 		wp_register_script('font-awesome-bp360', 'https://kit.fontawesome.com/3036d3d63b.js', array(), '5.10.2', true);
 
 		// Animate css
 		wp_register_style('animate', get_stylesheet_directory_uri().'/assets/css/animate.css', false, '3.7.0');
 
-		// Bootstrap 4.3.1
-		wp_register_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css', false, '4.6.2');
+		// Bootstrap 4.6.2
+		wp_register_style('bootstrap', get_stylesheet_directory_uri().'/assets/css/bootstrap.min.css', false, BP_VERSION);
 
-		wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js', array('jquery'), '4.6.2', true);
-		wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', array('jquery'), '1.16.1', true);
+		wp_register_script('bootstrap', get_stylesheet_directory_uri().'/assets/js/bootstrap.min.js', array('jquery'), BP_VERSION, true);
+		wp_register_script('popper', get_stylesheet_directory_uri().'/assets/js/popper.min.js', array('jquery'), BP_VERSION, true);
 
 		// BP Social Share Buttons
 		wp_register_script('bpssb', get_stylesheet_directory_uri().'/assets/js/bpssb.js', array('jquery'), BP_VERSION, true);
@@ -241,7 +242,7 @@
 		wp_register_script('blog-masonry', get_stylesheet_directory_uri().'/assets/js/blog-masonry.js', array('jquery'), BP_VERSION, true);
 
 		wp_enqueue_style('bootstrap');
-		wp_enqueue_style('noto-sans-jp');
+		wp_enqueue_style('nexa');
 		wp_enqueue_style('style-bp360');
 		//wp_enqueue_style('animate');
 		//wp_enqueue_script('jquery-slim');

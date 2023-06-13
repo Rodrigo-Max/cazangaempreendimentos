@@ -16,9 +16,6 @@
     <div class="container custom-container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="<?php echo esc_url(get_bloginfo('url')); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="img-fluid" /></a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="burger-menu"><i></i></span>
-            </button>
             <?php
                 wp_nav_menu([
                     'menu'            => 'primary',
@@ -33,6 +30,11 @@
                     'walker'          => new bs4navwalker()
                 ]);
             ?>
+        </nav>
+        <a href="#" class="burger-menu vertical-align"><i></i></a>
+        <nav class="nav-menu">
+            <div class="nav-menu-layer"><span></span></div>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'table-align', 'menu_class' => 'nav-list cell-view' ) ); ?>
         </nav>
     </div>
 </header>

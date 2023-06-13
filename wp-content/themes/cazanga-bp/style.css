@@ -5,9 +5,9 @@ Theme URI: http://www.bp360.com.br/
 Author: Agência BluePause
 Author URI: http://www.bp360.com.br/
 Description: Tema desenvolvido de forma persolizada para a Cazanga Empreendimentos pela Agência BluePause
-Version: 0.0.1
+Version: 0.0.2
 */
-html,body,a,article,button,dd,del,div,dl,footer,address,h1,h2,h3,h4,h5,h6,header,input,ins,li,nav,p,section,select,span,strong,td,th,textarea,ul,time,aside{font-family: 'Noto Sans JP', sans-serif;}
+html,body,a,article,button,dd,del,div,dl,footer,address,h1,h2,h3,h4,h5,h6,header,input,ins,li,nav,p,section,select,span,strong,td,th,textarea,ul,time,aside{font-family: 'Nexa', sans-serif;}
 
 body{background-color: #fff;}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-weight: 600;}
@@ -58,26 +58,48 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-weight: 600;}
 #main_header .navbar-nav .nav-link:hover{background-color: #f5f5f5; color: #49b046}
 #main_header .navbar-collapse.collapse.show{padding-top: 20px}
 
-#main_header .navbar-toggler{border-color: #f5f5f5; outline: none; box-shadow: none}
-#main_header .burger-menu{display: flex; width: 1.5em; height: 1.5em; align-items: center}
-#main_header .burger-menu i{display: inline-block; width: 100%; height: 3px; background-color: #183e65; position: relative; transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out;}
-#main_header .burger-menu i:before {content: ''; position: absolute; left: 0px; top: -9px; width: 100%; height: 3px; background-color: #183e65; border-radius: 4px; transition: all 0.35s ease-out; -webkit-transition: all 0.35s ease-out; backface-visibility: hidden;}
-#main_header .burger-menu i:after {content: ''; position: absolute; left: 0px; bottom: -9px; width: 100%; height: 3px; background-color: #183e65; border-radius: 4px; transition: all 0.35s ease-out; -webkit-transition: all 0.35s ease-out; backface-visibility: hidden;}
+.burger-menu {position: absolute; top: 15px; right: 15px; height: 20px; width: 35px; z-index: 12000;}
+.burger-menu i {display: inline-block; width: 100%; height: 3px; background: #183e65; position: relative; transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out;}
+.burger-menu i:before {content: ''; position: absolute; left: 0px; top: -9px; width: 100%; height: 3px; background: #183e65; border-radius: 4px; transition: all 0.35s ease-out; -webkit-transition: all 0.35s ease-out; backface-visibility: hidden;}
+.burger-menu i:after {content: ''; position: absolute; left: 0px; bottom: -9px; width: 100%; height: 3px; background: #183e65; border-radius: 4px; transition: all 0.35s ease-out; -webkit-transition: all 0.35s ease-out; backface-visibility: hidden;}
+.burger-menu.active{top: 15px;}
+.burger-menu.active i {background: rgba(0,0,0,0);}
+.burger-menu.active i:before {background-color: #fff; transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); top: 0px;}
+.burger-menu.active i:after {background-color: #fff; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); bottom: 0px;}
 
-#main_header .navbar-toggler.collapsed .burger-menu i:before {transform: rotate(0); -webkit-transform: rotate(0); -ms-transform: rotate(0); top: -9px;}
-#main_header .navbar-toggler.collapsed .burger-menu i:after {transform: rotate(0); -webkit-transform: rotate(0); -ms-transform: rotate(0); bottom: -9px;}
-#main_header .navbar-toggler.collapsed .burger-menu i {background-color: #183e65;}
-
-#main_header .navbar-toggler .burger-menu i {background-color: #f5f5f5;}
-#main_header .navbar-toggler .burger-menu i:before {transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); top: 0px;}
-#main_header .navbar-toggler .burger-menu i:after {transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); bottom: 0px;}
+.nav-menu {display: block; position: fixed; left: 0px; top: 0px; padding-top: 100px; width: 100%; height: 100%; visibility: hidden; opacity: 0; transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; overflow-y: auto; background-color: rgba(0,0,0,0.85); z-index: 11000;}
+.nav-menu.slide {visibility: visible; opacity: 1;}
+.table-align {display: table; width: 100%; height: 100%;}
+.cell-view {display: table-cell; vertical-align: middle;}
+.nav-list {position: relative; list-style: none; width: 100%; text-align: center; padding: 0px 0px 50px;}
+.nav-list > li {position: relative; width: 100%; opacity: 0; transform: translateY(15px); -webkit-transform: translateY(15px); -webkit-transition: all 300ms cubic-bezier(0.76, 0.94, 0.47, 1.04); transition: all 300ms cubic-bezier(0.76, 0.94, 0.47, 1.04); line-height: 40px;}
+.nav-menu.slide .nav-list > li {opacity: 1; transform: translateY(0px); -webkit-transform: translateY(0px);}
+.nav-menu.slide .nav-list > li ul{display: none}
+.nav-list > li:nth-child(1) {transition-delay: 0.2s;}
+.nav-list > li:nth-child(2) {transition-delay: 0.4s;}
+.nav-list > li:nth-child(3) {transition-delay: 0.6s;}
+.nav-list > li:nth-child(4) {transition-delay: 0.8s;}
+.nav-list > li:nth-child(5) {transition-delay: 1s;}
+.nav-list > li:nth-child(6) {transition-delay: 1.2s;}
+.nav-list > li:nth-child(7) {transition-delay: 1.4s;}
+.nav-list > li a{color: #fff; text-decoration: none; font-weight: 700; font-size: 24px; line-height: 1.1; position: relative; display: inline-block; text-transform: uppercase;}
+.nav-list > li a:hover{color: #49b046}
 
 @media (min-width: 576px){
     #main_header{padding: 20px 0;}
     #main_header .navbar-brand{width: 183px; height: 45px;}
+    .burger-menu{
+        top: 25px;
+    }
 }
 @media (min-width: 768px){
     #main_header .navbar-nav .nav-link{font-size: 14px; padding-left: 13px; padding-right: 13px; margin-left: 0; margin-right: 0;}
+    .burger-menu{
+        top: 25px;
+    }
+}
+@media (min-width: 992px){
+    .burger-menu{display: none;}
 }
 @media (min-width: 1200px) {
     #main_header{padding: 26px 0}
@@ -433,7 +455,7 @@ span.wpcf7-not-valid-tip{font-size: 14px; color: #f00;}
 .caret {display: inline-block; width: 0; height: 0; margin-left: 2px; vertical-align: middle; border-top: 4px dashed; border-top: 4px solid\9; border-right: 4px solid transparent; border-left: 4px solid transparent;}
 
 /* Botão Whatsapp */
-#whatsapp-fixo {display: block; position: fixed; bottom: 21px; right: 20px; z-index: 10000; width: 58px; height: 58px; border-radius: 50%; color: #fff; font-size: 36px; text-align: center; background-color: #29a71a; transition: 150ms all linear;}
+#whatsapp-fixo {display: block; position: fixed; bottom: 21px; right: 20px; width: 58px; height: 58px; border-radius: 50%; color: #fff; font-size: 36px; text-align: center; background-color: #29a71a; transition: 150ms all linear; z-index: 1000;}
 .texto-whatsapp{display: none; position: absolute; bottom: 70px; right: -15px; width: 110px; height: auto; padding: 3px 5px; background-color: #29A71A; color: #fff; border-radius: 5px; font-size: 12px; line-height: 1.1;}
 
 /* Yoast SEO Breadcrumbs */

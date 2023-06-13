@@ -1,16 +1,16 @@
-#pilares{background: #f1f1f1; padding: 50px 0;}
+#pilares{background: #f1f1f1; padding: 50px 0 30px;}
 #pilares .row p{font-size: 14px; color: #183e65; font-weight: 400; margin-top: 20px; margin-bottom: 30px; line-height: 1.2}
 #pilares .row p strong{font-weight: 700;}
 #pilares .row img{max-width: 90px;}
 
 @media (min-width: 768px){
-    #pilares{padding: 80px 0 100px;}
+    #pilares{padding: 80px 0 50px;}
     #pilares .row{max-width: 745px; margin: 0 auto;}
     #pilares .row p{font-size: 16px;}
     #pilares .row img{max-width: 90px;}
 }
 @media (min-width: 992px) {
-    #pilares{padding: 110px 0 130px;}
+    #pilares{padding: 110px 0 60px;}
     #pilares .row{max-width: 745px; margin: 0 auto;}
     #pilares .row img{max-width: 121px;}
     #pilares .row p{font-size: 18px;}

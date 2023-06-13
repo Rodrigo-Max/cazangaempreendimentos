@@ -1,6 +1,12 @@
 jQuery( document ).ready( function ( $ ) {
 	"use strict";
 
+	$(document).on('click', '.burger-menu', function() {
+		$('.nav-menu').toggleClass('slide');
+		$(this).toggleClass('active');
+		return false;
+	});
+	
     $(document).scroll(function(e){
 		var scrollTop = $(document).scrollTop();
 
