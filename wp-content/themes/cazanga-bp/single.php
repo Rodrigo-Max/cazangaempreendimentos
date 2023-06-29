@@ -44,15 +44,10 @@
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
                         <?php
-                            if (1928 == get_the_ID())
-                                echo '<p class="entry-subtitle">Convidado especial: Sr. Piu, do <a href="https://www.instagram.com/midiapiu" rel="noopener,nofollow" target="_blank">@midiapiu</a></p>';
-                            
-                            if (1928 != get_the_ID()){
-                                $values = get_post_custom( $post->ID );
-                                $bp_subtitulo = isset( $values['bp_subtitulo'] ) ? esc_attr( $values['bp_subtitulo'][0] ) : '';
-                                if (!empty($bp_subtitulo))
-                                    echo '<p class="entry-subtitle">', $bp_subtitulo, '</p>';
-                            }
+                            $values = get_post_custom( $post->ID );
+                            $bp_subtitulo = isset( $values['bp_subtitulo'] ) ? esc_attr( $values['bp_subtitulo'][0] ) : '';
+                            if (!empty($bp_subtitulo))
+                                echo '<p class="entry-subtitle">', $bp_subtitulo, '</p>';
                         ?>
                         <header class="entry-header">
                             <p class="post-meta">

@@ -1,0 +1,31 @@
+.featured-image{display: block; margin-bottom: 50px;}
+article.page{position: relative; min-height: 500px; padding-bottom: 50px}
+h1.entry-title, h1.page-title{position: relative; color: #162f49; font-weight: 300; font-size: 30px; margin: 30px 0; padding-top: 20px}
+
+.featured-image-bg, article.page .featured-image-bg{position: relative; display: flex; justify-content: center; align-items: center; background: #49b046; background-position: center top; background-size: cover; background-repeat: no-repeat; padding: 50px 15px; min-height: 200px; margin-bottom: 30px;}
+.featured-image-bg .entry-title, article.page .featured-image-bg .entry-title{position: relative; margin: 0; padding: 0; color: #fff; font-size: 32px; text-transform: uppercase; font-weight: 700; text-shadow: 2px 2px 5px rgba(0,0,0,.5);}
+.featured-image-bg .overlay-bg, article.page .featured-image-bg .overlay-bg{position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.3);}
+
+article.page .entry{color: #565656; font-size: 15px;}
+article.page .entry a{color: #49b046; text-decoration: none; transition: .15s}
+article.page .entry a:hover{color: #fff; background-color: #49b046; text-decoration: none}
+article.page .entry img.alignleft {float: left; margin-right: 30px;}
+article.page .entry img.alignright {float: right; margin-left: 30px;}
+article.page .entry img.aligncenter {display: block; margin: 0 auto 30px; text-align: center;}
+article.page .entry .wp-caption{max-width: 100%;}
+article.page .entry .wp-caption .wp-caption-text{font-size: 12px; color: #565656; margin: 10px 0 0; padding: 0;}
+article.page .entry .wp-caption img{margin-bottom: 0;}
+article.page .entry .alignleft {float: left; margin-right: 30px;}
+article.page .entry .alignright {float: right; margin-left: 30px;}
+article.page .entry .aligncenter {display: block; margin: 0 auto 30px; text-align: center;}
+article.page .entry span.section-title{display: block; padding: 5px; background-color: #FFF; width: 170px; max-width: 100%; margin: 0 auto 25px; text-align: center; font-style: italic; font-size: 24px; color: #000; -webkit-box-shadow: 2px 3px 0px 0px #d0d0d0; -moz-box-shadow: 2px 3px 0px 0px #d0d0d0; box-shadow: 2px 3px 0px 0px #d0d0d0;}
+
+@media (min-width: 768px){
+    h1.entry-title, h1.page-title{font-size: 42px;}
+}
+@media (min-width: 992px) {
+	h1.entry-title, h1.page-title{font-size: 48px;}
+}
+@media (min-width: 1200px) {
+    h1.page-title{font-size: 52px}
+}

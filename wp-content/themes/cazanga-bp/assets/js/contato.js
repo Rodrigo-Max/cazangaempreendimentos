@@ -11,7 +11,7 @@ jQuery( document ).ready( function ( $ ) {
         },
 
 		maskGeneral: function() {
-			prf_frontend.maskPhone( 'input.tel' );
+			prf_frontend.maskPhone( 'input.phone' );
 		},
 
 		maskPhone: function(selector) {

@@ -188,6 +188,9 @@
 		// Main css
 		wp_register_style('style-bp360', get_stylesheet_uri(), false, BP_VERSION);
 
+		wp_register_style('page-bp', get_stylesheet_directory_uri().'/assets/css/page.css', false, BP_VERSION);
+		wp_register_style('post-bp', get_stylesheet_directory_uri().'/assets/css/post.css', false, BP_VERSION);
+
 		// Main js
 		wp_register_script('common-bp360', get_stylesheet_directory_uri().'/assets/js/common.js', array('jquery'), BP_VERSION, true);
 		wp_register_script('whatsapp-bp360', get_stylesheet_directory_uri().'/assets/js/bp-whatsapp.js', array('jquery'), BP_VERSION, true);
@@ -240,6 +243,8 @@
 
 		// Scripts blog e categoria de posts
 		wp_register_script('blog-masonry', get_stylesheet_directory_uri().'/assets/js/blog-masonry.js', array('jquery'), BP_VERSION, true);
+		
+		wp_register_script('jquery-mask', get_stylesheet_directory_uri().'/assets/js/jquery.mask/jquery.mask.min.js', array('jquery'), BP_VERSION, true);
 
 		wp_enqueue_style('bootstrap');
 		wp_enqueue_style('nexa');
@@ -258,6 +263,19 @@
 			wp_enqueue_script('slick');
 
 			wp_enqueue_script('home-bp360');
+		}
+
+		if (!is_front_page() && (is_page() || is_tax('empreendimento_cat') || is_post_type_archive( 'empreendimento' ))){
+			wp_enqueue_style('page-bp');
+		}
+
+		if (is_single() || is_category() || is_tag()){
+			wp_enqueue_style('post-bp');
+		}
+
+		if (is_page('contato')){
+			wp_enqueue_script('jquery-mask');
+			wp_enqueue_script('contato');
 		}
 		
 		wp_enqueue_script('font-awesome-bp360');

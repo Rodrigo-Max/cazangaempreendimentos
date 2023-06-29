@@ -26,79 +26,111 @@
 </section>
 <section id="bairros-abertos" class="position-relative">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="#" class="bairro venda-aberta">
-                    <span class="tag"></span>
-                    <figure>
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/empreendimento.png" class="img-bairro" />
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/logo-empreendimento.png" class="logo-bairro" />
-                    </figure>
-                    <div class="content-bairro">
-                        <h3>Margarida Rezende</h3>
-                        <p class="cidade"><strong>Cidade:</strong><br>Arcos</p>
-                        <p class="previsao-entrega"><strong>Previsão de entrega:</strong><br>dez/2024</p>
-                        <div class="bt-cta">Clique aqui e conheça <br>o Bairro Planejado</div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="#" class="bairro venda-breve">
-                    <span class="tag"></span>
-                    <figure>
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/empreendimento.png" class="img-bairro" />
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/logo-empreendimento.png" class="logo-bairro" />
-                    </figure>
-                    <div class="content-bairro">
-                        <h3>Margarida Rezende</h3>
-                        <p class="cidade"><strong>Cidade:</strong><br>Arcos</p>
-                        <p class="previsao-entrega"><strong>Previsão de entrega:</strong><br>dez/2024</p>
-                        <div class="bt-cta"><strong>Cadastre-se</strong><br>Te avisaremos da abertura das <br>vendas antecipadamente.</div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="#" class="bairro venda-breve">
-                    <span class="tag"></span>
-                    <figure>
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/empreendimento.png" class="img-bairro" />
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/logo-empreendimento.png" class="logo-bairro" />
-                    </figure>
-                    <div class="content-bairro">
-                        <h3>Margarida Rezende</h3>
-                        <p class="cidade"><strong>Cidade:</strong><br>Arcos</p>
-                        <p class="previsao-entrega"><strong>Previsão de entrega:</strong><br>dez/2024</p>
-                        <div class="bt-cta"><strong>Cadastre-se</strong><br>Te avisaremos da abertura das <br>vendas antecipadamente.</div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <?php
+           $args = array(
+                'posts_per_page'   => 3,
+                'post_type'        => 'empreendimento',
+                'tax_query' => array(
+                    array (
+                        'taxonomy' => 'empreendimento_cat',
+                        'field' => 'term_id',
+                        'terms' => array(3, 4),
+                    )
+                ),
+                'orderby' => 'menu_order',
+                'order' => 'ASC'
+            );
+            $queryEmpreendimento = new WP_Query( $args );
+            if ($queryEmpreendimento->have_posts()){
+                echo '<div class="row justify-content-center">';
+                while ($queryEmpreendimento->have_posts()){
+                    $queryEmpreendimento->the_post();
+                    
+                    $cats = get_the_terms(get_the_ID(), 'empreendimento_cat');
+                    $class_venda = 'venda-aberta';
+                    foreach ($cats as $cat){
+                        if ($cat->term_id == 4)
+                            $class_venda = 'venda-breve';
+                    }
+                    
+                    $cidade = '';
+                    $previsao = '';
+                    if (function_exists('get_field')){
+                        $logo_listagem = wp_get_attachment_image_url(get_field('logo_listagem'), 'medium');
+                        $previsao = get_field('previsao');
+                        $cidade = get_field('cidade');
+                    }
+
+                    echo '<div class="col-12 col-md-6 col-lg-4">';
+                    echo '<a href="', get_the_permalink(), '" class="bairro ', $class_venda, '">';
+                    echo '<span class="tag"></span>';
+                    
+                    echo '<figure>';
+
+                    if (has_post_thumbnail()){
+                        echo '<img src="', get_the_post_thumbnail_url(get_the_ID(), 'full'), '" class="img-bairro" />';
+                    }
+
+                    if (isset($logo_listagem)){
+                        echo '<img src="', $logo_listagem, '" class="logo-bairro" />';
+                    }
+                    echo '</figure>';
+
+                    echo '<div class="content-bairro">';
+                    echo '<h3>', get_the_title(), '</h3>';
+                    echo '<p class="cidade"><strong>Cidade:</strong><br>', $cidade, '</p>';
+                    echo '<p class="previsao-entrega"><strong>Previsão de entrega:</strong><br>', $previsao, '</p>';
+
+                    if ($class_venda == 'venda-aberta')
+                        echo '<div class="bt-cta">Clique aqui e conheça <br>o Bairro Planejado</div>';
+                    else
+                        echo '<div class="bt-cta"><strong>Cadastre-se</strong><br>Te avisaremos da abertura das <br>vendas antecipadamente.</div>';
+
+                    echo '</div>';
+
+                    echo '</a>';
+                    echo '</div>';
+                }
+                echo '</div>';
+            }
+            wp_reset_postdata();
+        ?>
     </div>
 </section>
 <section id="bairros-entregues" class="position-relative">
     <h2 class="text-center">Bairros Planejados <strong>já entregues:</strong></h2>
-    <div class="slick-carousel" id="slick-fotos">
-        <div class="item">
-            <a href="#" class="bairro-entregue" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bairro-1.png);">
-                <h3>Alto dos Pinheiros</h3>
-            </a>
-        </div>
-        <div class="item">
-            <a href="#" class="bairro-entregue" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bairro-1.png);">
-                <h3>Portal das Acácias</h3>
-            </a>
-        </div>
-        <div class="item">
-            <a href="#" class="bairro-entregue" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bairro-1.png);">
-                <h3>Alto dos Pinheiros</h3>
-            </a>
-        </div>
-        <div class="item">
-            <a href="#" class="bairro-entregue" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bairro-1.png);">
-                <h3>Alto dos Pinheiros</h3>
-            </a>
-        </div>
-    </div>
+    <?php
+        $args = array(
+            'posts_per_page'   => 8,
+            'post_type'        => 'empreendimento',
+            'tax_query' => array(
+                array (
+                    'taxonomy' => 'empreendimento_cat',
+                    'field' => 'term_id',
+                    'terms' => 5,
+                )
+            ),
+        );
+        $queryEmpreendimento = new WP_Query( $args );
+        if ($queryEmpreendimento->have_posts()){
+            echo '<div class="slick-carousel" id="slick-fotos">';
+            while ($queryEmpreendimento->have_posts()){
+                $queryEmpreendimento->the_post();
+
+                $url = '';
+                if (has_post_thumbnail())
+                    $url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+
+                echo '<div class="item">';
+                echo '<a href="', get_the_permalink(), '" class="bairro-entregue" style="background-image: url(', $url, ');">';
+                echo '<h3>', get_the_title(), '</h3>';
+                echo '</a>';
+                echo '</div>';
+            }
+            echo '</div>';
+        }
+        wp_reset_postdata();
+    ?>
 </section>
 <section id="whatsapp-home" class="position-relative">
     <div class="container">

@@ -9,7 +9,7 @@
     <body>
 <div class="address-top d-none d-lg-block">
     <div class="container">
-        <p class="m-0 text-center"><strong>Atendimento:</strong> 37 3351-1666 | 37 99915-3167  •  Rua Jarbas Ferreira Pires, 412 - Lj02 - Centro, Arcos-MG  •  Acompanhe nossas redes sociais: <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+        <p class="m-0 text-center"><strong>Atendimento:</strong> 37 3351-1666 | 37 99915-3167  •  Rua Jarbas Ferreira Pires, 412 - Lj 02 - Centro, Arcos-MG  •  Acompanhe nossas redes sociais: <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></p>
     </div>
 </div>
 <header id="main_header">
