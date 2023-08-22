@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 <div id="slider-home">
-    <?php echo do_shortcode('[rev_slider alias="home"][/rev_slider]'); ?>
+    <div class="d-block d-md-none">
+        <?php echo do_shortcode('[rev_slider alias="home-mobile"][/rev_slider]'); ?>
+    </div>
+    <div class="d-none d-md-block">
+        <?php echo do_shortcode('[rev_slider alias="home"][/rev_slider]'); ?>
+    </div>
 </div>
 <section id="pilares" class="position-relative">
     <div class="container">
@@ -15,11 +20,11 @@
             </div>
             <div class="col-6 col-md-3">
                 <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/tempo.png" class="d-block img-fluid mx-auto wow animate__rollIn" data-wow-delay="800ms" alt="Vendas" />
-                <p class="text-center mb-5 wow animate__rollIn" data-wow-delay="1000ms"><strong>Mais de 35 anos</strong><br>de mercado</p>
+                <p class="text-center mb-5 wow animate__rollIn" data-wow-delay="1000ms"><strong>Mais de 12 anos</strong><br>de mercado</p>
             </div>
             <div class="col-6 col-md-3">
                 <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/bairros-entregues.png" class="d-block img-fluid mx-auto wow animate__rollIn" data-wow-delay="1200ms" alt="Operações" />
-                <p class="text-center mb-5 wow animate__rollIn" data-wow-delay="1400ms"><strong>Mais de xx Bairros</strong><br>Planejados entregues</p>
+                <p class="text-center mb-5 wow animate__rollIn" data-wow-delay="1400ms"><strong>Mais de uma dezena de</strong><br>Bairros Planejados entregues</p>
             </div>
         </div>
     </div>
@@ -34,7 +39,7 @@
                     array (
                         'taxonomy' => 'empreendimento_cat',
                         'field' => 'term_id',
-                        'terms' => array(3, 4),
+                        'terms' => array(6),
                     )
                 ),
                 'orderby' => 'menu_order',
@@ -134,7 +139,7 @@
 </section>
 <section id="whatsapp-home" class="position-relative">
     <div class="container">
-        <a href="https://wa.me/553732221205" target="_blank"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/whatsapp-home.png" /><h2>Converse com nosso <strong><em>setor comercial</em></strong> pelo whatsapp. <strong>Clique aqui</strong></h2></a>
+        <a href="https://wa.me/5537999153167" target="_blank"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/whatsapp-home.png" /><h2>Converse com nosso <strong><em>setor comercial</em></strong> pelo whatsapp. <strong>Clique aqui</strong></h2></a>
     </div>
 </section>
 <?php get_footer(); ?>

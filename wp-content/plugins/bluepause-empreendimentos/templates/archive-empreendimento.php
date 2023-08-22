@@ -47,7 +47,11 @@
                             echo '<div class="content-bairro">';
                             echo '<h3>', get_the_title(), '</h3>';
                             echo '<p class="cidade"><strong>Cidade:</strong><br>', $cidade, '</p>';
-                            echo '<p class="previsao-entrega"><strong>Previsão de entrega:</strong><br>', $previsao, '</p>';
+
+                            if ($class_venda != 'ja-entregue')
+                                echo '<p class="previsao-entrega"><strong>Previsão de entrega:</strong><br>', $previsao, '</p>';
+                            else
+                                echo '<p class="previsao-entrega"><strong>Empreendimento concluído</strong></p>';
         
                             if ($class_venda == 'venda-aberta' || $class_venda == 'ja-entregue')
                                 echo '<div class="bt-cta">Clique aqui e conheça <br>o Bairro Planejado</div>';

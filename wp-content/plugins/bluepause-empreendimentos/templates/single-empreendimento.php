@@ -21,23 +21,31 @@
                         $formulario_facilita = get_field('formulario_facilita');
                     }
                     
+                    $texto_chamada = "";
                     $cats = get_the_terms(get_the_ID(), 'empreendimento_cat');
                     foreach ($cats as $cat){
-                        if ($cat->term_id == 3)
+                        if ($cat->term_id == 3 || $cat->term_id == 4)
                             $venda_aberta = true;
+
+                        if ($cat->term_id == 3)
+                            $texto_chamada = "<strong>Gostou?</strong> Então garanta já sua unidade!";
+                        elseif ($cat->term_id == 4)
+                            $texto_chamada = "<strong>Gostou?</strong> Solicite contato e conheça mais!";
                     }
 
                     echo '<figure class="featured-image">';
+
                     if (has_post_thumbnail()){
                         $url_destacada = get_the_post_thumbnail_url(get_the_ID(), 'full');
                         echo '<img src="', $url_destacada, '" class="img-bairro" />';
                     }
-                    if (isset($logo)){
+                    if (!empty($logo)){
                         echo '<img src="', $logo, '" class="logo-bairro" />';
                     }
+                    echo '<div class="overlay-image"></div>';
+                    echo '<h1 itemprop="name" ', !empty($logo) ? 'class="d-none"' : '',  '>', the_title(), '</h1>';
                     echo '</figure>';
                 ?>
-                <h1 class="d-none" itemprop="name"><?php the_title(); ?></h1>
                 <div class="container descricao">
                     <?php if (!empty($slogan)){ ?><h2 class="slogan text-center text-lg-left text-uppercase"><?php echo $slogan; ?></h2><?php } ?>
                     <?php if (!empty($breve_descricao)){ ?><p class="breve-descricao text-center text-lg-left"><?php echo nl2br($breve_descricao); ?></p><?php } ?>
@@ -68,26 +76,30 @@
                         </div>
                     </div>
                 <?php } ?>
-                <section id="ficha-tecnica-empreendimento" class="position-relative">
+                <section id="ficha-tecnica-empreendimento" class="position-relative <?php echo empty($video) ? 'mt-5': ''; ?>">
                     <div class="container">
                         <h3 class="text-left text-uppercase">Ficha Técnica</h3>
                         <p class="nome-empreendimento"><?php the_title(); ?> | Bairro Planejado</p>
-                        <?php if (isset($area_terreno)){ ?>
+                        <?php if (!empty($area_terreno)){ ?>
                             <p class="dados-terreno">Área total do Terreno: <strong><?php echo number_format($area_terreno, 2, ',', '.'); ?> M<sup>2</sup></strong></p>
                         <?php } ?>
-                        <?php if (isset($area_lotes)){ ?>
+                        <?php if (!empty($area_lotes)){ ?>
                             <p class="dados-terreno">Área total de Lotes: <strong><?php echo number_format($area_lotes, 2, ',', '.'); ?> M<sup>2</sup></strong></p>
                         <?php } ?>
-                        <?php if (isset($area_ruas)){ ?>
+                        <?php if (!empty($area_ruas)){ ?>
                             <p class="dados-terreno">Área total de Ruas: <strong><?php echo number_format($area_ruas, 2, ',', '.'); ?> M<sup>2</sup></strong></p>
                         <?php } ?>
-                        <?php if (isset($area_institucional)){ ?>
+                        <?php if (!empty($area_institucional)){ ?>
                             <p class="dados-terreno">Área Institucional: <strong><?php echo number_format($area_institucional, 2, ',', '.'); ?> M<sup>2</sup></strong></p>
                         <?php } ?>
-                        <?php if (isset($total_lotes)){ ?>
+                        <?php if (!empty($total_lotes)){ ?>
                             <p class="dados-terreno verde">Total de Lotes: <strong><?php echo number_format($total_lotes, 0, ',', '.'); ?></strong></p>
                         <?php } ?>
-                        <?php if (isset($total_lotes)){ ?>
+                        
+                        <?php if (empty($area_terreno) && empty($area_lotes) && empty($area_ruas) && empty($area_institucional) && empty($total_lotes) && empty($area_terreno)){ ?>
+                            <p class="dados-terreno"><strong>Mais informações em breve</strong></p> 
+                        <?php } ?>
+                        <?php if (!empty($cidade)){ ?>
                             <p class="dados-terreno verde">Cidade: <strong class="text-uppercase"><?php echo $cidade; ?></strong></p>
                         <?php } ?>
                     </div>
@@ -97,15 +109,15 @@
                         }
                     ?>
                 </section>
-                <?php if (isset($venda_aberta)){ ?>
+                <?php if (!empty($venda_aberta)){ ?>
                     <?php if (!empty($formulario_facilita)){ ?>
                         <section id="facilita-empreendimento" class="position-relative">
-                            <h3 class="text-center"><strong>Gostou?</strong> Então garanta já sua unidade!</h3>
+                            <h3 class="text-center"><?php echo $texto_chamada; ?></h3>
                             <?php echo stripslashes($formulario_facilita); ?>
                         </section>
                     <?php } else { ?>
                         <section id="whatsapp-empreendimento" class="position-relative">
-                            <h3 class="text-center"><strong>Gostou?</strong> Então garanta já sua unidade!</h3>
+                            <h3 class="text-center"><?php echo $texto_chamada; ?></h3>
                             <div class="bg-white">
                                 <div class="container">
                                     <a href="https://wa.me/553732221205" target="_blank"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/whatsapp-home.png" /><h4>Converse com nosso <strong><em>setor comercial</em></strong> pelo whatsapp. <strong>Clique aqui</strong></h4></a>
@@ -115,7 +127,7 @@
                     <?php } ?>
                 <?php } ?>
                 <?php if (!empty($mapa)){ ?>
-                    <section id="mapa-empreendimento" class="position-relative">
+                    <section id="mapa-empreendimento" class="position-relative <?php echo empty($venda_aberta) ? 'mt-5' : ''; ?>">
                         <h3 class="text-center text-uppercase">Localização do Empreendimento</h3>
                         <?php echo stripslashes($mapa); ?>
                     </div>

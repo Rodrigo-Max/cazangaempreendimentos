@@ -1,4 +1,4 @@
-<a href="https://wa.me/553732221205" target="_blank" id="whatsapp-fixo"><i class="fab fa-whatsapp" aria-hidden="true"></i><div class="texto-whatsapp">Estamos online, converse com nosso time comercial agora mesmo.</div></a>
+<a href="https://wa.me/5537999153167" target="_blank" id="whatsapp-fixo"><i class="fab fa-whatsapp" aria-hidden="true"></i><div class="texto-whatsapp">Estamos online, converse com nosso time comercial agora mesmo.</div></a>
 <footer id="main_footer" class="position-relative">
     <div class="container custom-container">
         <div class="row justify-content-center">
@@ -6,11 +6,11 @@
                 <a href="<?php echo esc_url(get_bloginfo('url')); ?>" class="logo-rodape"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-footer.png" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="d-block mx-auto img-fluid mb-5 mb-lg-0 mx-xl-0" /></a>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                <address class="mt-3 mt-md-0"><p class="m-0 text-center text-md-left"><strong class="text-uppercase">Endereço</strong><br>Rua Jarbas Ferreira Pires, 412 - Lj 02<br>Centro - Arcos/MG | CEP: 35588-000</address>
+                <address class="mt-3 mt-md-0"><p class="m-0 text-center text-md-left"><strong class="text-uppercase">Endereço</strong><br>Av. Dr. João Vaz Sobrinho, nº 40 - trecho 1<br>Centro - Arcos/MG | CEP: 35588-000</address>
                 <p class="m-0 text-center text-md-left contato"><strong class="text-uppercase">Telefone</strong><br><a href="tel:03733511666">37 3351 1666</a> | <a href="tel:037999153167">37 99915 3167</a></p>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                <p class="mt-5 mt-md-0 text-center text-md-left social"><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a> <span>| Cazanga Empreendimentos</span></p>
+                <p class="mt-5 mt-md-0 text-center text-md-left social"><a href="https://www.facebook.com/cazangaempreendimentos" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://www.instagram.com/cazangaempreendimentos/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.linkedin.com/company/cazangaempreendimentos/" target="_blank"><i class="fab fa-linkedin"></i></a> <span>| Cazanga Empreendimentos</span></p>
             </div>
         </div>
     </div>

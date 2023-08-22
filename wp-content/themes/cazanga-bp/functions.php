@@ -1,5 +1,5 @@
 <?php
-	define('BP_VERSION', '0.0.4');
+	define('BP_VERSION', '0.0.5');
 
 	if ( is_admin() ){
 		require_once('admin/settings.php');
@@ -246,6 +246,9 @@
 		
 		wp_register_script('jquery-mask', get_stylesheet_directory_uri().'/assets/js/jquery.mask/jquery.mask.min.js', array('jquery'), BP_VERSION, true);
 
+		
+		wp_register_style('sobre-bp360', get_stylesheet_directory_uri().'/assets/css/sobre.css', false, BP_VERSION);
+
 		wp_enqueue_style('bootstrap');
 		wp_enqueue_style('nexa');
 		wp_enqueue_style('style-bp360');
@@ -276,6 +279,10 @@
 		if (is_page('contato')){
 			wp_enqueue_script('jquery-mask');
 			wp_enqueue_script('contato');
+		}
+
+		if (is_page('sobre')){
+			wp_enqueue_style('sobre-bp360');
 		}
 		
 		wp_enqueue_script('font-awesome-bp360');

@@ -33,7 +33,7 @@
     background-image: url('../images/vendas-em-breve.png');
 }
 .bairro.ja-entregue .tag{
-    background-image: url('../images/ja-entregue.png');
+    background-image: url('../images/ja-entregue-2.png');
 }
 .bairro figure{
     position: relative;
@@ -245,6 +245,32 @@
     z-index: 20;
 }
 
+.empreendimento .featured-image h1{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0 0 5px rgba(0,0,0,.8);
+    text-transform: uppercase;
+    transform: translateY(-50%);
+    z-index: 200;
+}
+.empreendimento .featured-image .overlay-image{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../images/gridtile.png') center center repeat;
+    z-index: 100;
+}
+
 .empreendimento .descricao{
     padding: 50px 15px;
 }
@@ -275,6 +301,9 @@
     .empreendimento .descricao .breve-descricao{
         font-size: 18px;
     }
+    .empreendimento .featured-image h1{
+        font-size: 36px;
+    }
 }
 @media (min-width: 992px) {
     .empreendimento .descricao{
@@ -288,6 +317,9 @@
         max-width: 500px;
         font-size: 24px;
     }
+    .empreendimento .featured-image h1{
+        font-size: 42px;
+    }
 }
 @media (min-width: 1200px) {
     .empreendimento .descricao{
@@ -300,6 +332,9 @@
     .empreendimento .descricao .breve-descricao{
         max-width: 500px;
         font-size: 24px;
+    }
+    .empreendimento .featured-image h1{
+        font-size: 48px;
     }
 }
 
@@ -649,7 +684,7 @@
 }
 #facilita-empreendimento iframe{
     width: 100%;
-    height: 600px;
+    height: 800px;
     border: 0;
 }
 #facilita-empreendimento h3{
@@ -672,7 +707,7 @@
         font-size: 28px;
     }
     #facilita-empreendimento iframe{
-        height: 550px;
+        height: 650px;
     }
 }
 @media (min-width: 992px) {
