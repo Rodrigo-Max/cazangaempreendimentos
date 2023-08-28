@@ -242,7 +242,7 @@
     width: auto;
     height: 100%;
     object-fit: contain;
-    z-index: 20;
+    z-index: 200;
 }
 
 .empreendimento .featured-image h1{
@@ -758,3 +758,10 @@
         height: 505px;
     }
 }
+
+.bp-empreendimento-numeric-nav{padding: 0; margin: 0 0 50px; text-align: center;}
+.bp-empreendimento-numeric-nav ul{padding: 0; margin: 0 auto;}
+.bp-empreendimento-numeric-nav li a, .bp-empreendimento-numeric-nav li a:hover, .bp-empreendimento-numeric-nav li.active a, .bp-empreendimento-numeric-nav li.disabled {color: #183e65; font-size: 14px; text-decoration: none; transition: .2s all linear; text-transform: lowercase;}
+.bp-empreendimento-numeric-nav li {display: inline; margin: 0; padding: 0 3px}
+.bp-empreendimento-numeric-nav li a, .bp-empreendimento-numeric-nav li a:hover, .bp-empreendimento-numeric-nav li.active a, .bp-empreendimento-numeric-nav li.disabled {background-color: #fff; border-radius: 5px; cursor: pointer; padding: 5px 10px;}
+.bp-empreendimento-numeric-nav li a:hover,.bp-empreendimento-numeric-nav li.active a {background-color: #49b046; color: #fff !important}

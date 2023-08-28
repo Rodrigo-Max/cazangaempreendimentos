@@ -4,7 +4,7 @@
  * Description: Cadastro de Empreendimentos personalizados para a Cazanga Empreendimentos.
  * Plugin URI: https://bp360.com.br/
  * Author: Agência BluePause
- * Version: 0.0.5
+ * Version: 0.0.9
  * Author URI: https://bp360.com.br/
  *
  * Text Domain: bp-empreendimentos

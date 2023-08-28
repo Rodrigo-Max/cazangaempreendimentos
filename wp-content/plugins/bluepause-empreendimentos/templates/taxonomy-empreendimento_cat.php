@@ -3,6 +3,7 @@
     <article id="page-empreendimentos" class="page">
         <?php
             $cat = get_queried_object(  );
+            $cat_id = get_queried_object_id();
         ?>
         <div class="featured-image-bg">
             <h1 class="entry-title"><?php echo $cat->name; ?></h1>
@@ -15,14 +16,11 @@
                         echo '<div class="row margin-empreendimento">';
                         while (have_posts()){
                             the_post();
-                            $cats = get_the_terms(get_the_ID(), 'empreendimento_cat');
                             $class_venda = 'venda-aberta';
-                            foreach ($cats as $cat){
-                                if ($cat->term_id == 4)
-                                    $class_venda = 'venda-breve';
-                                if ($cat->term_id == 5)
-                                    $class_venda = 'ja-entregue';
-                            }
+                            if ($cat_id == 4)
+                                $class_venda = 'venda-breve';
+                            if ($cat_id == 5)
+                                $class_venda = 'ja-entregue';
                             
                             $cidade = '';
                             $previsao = '';
@@ -51,8 +49,10 @@
                             echo '<h3>', get_the_title(), '</h3>';
                             echo '<p class="cidade"><strong>Cidade:</strong><br>', $cidade, '</p>';
 
-                            if ($class_venda != 'ja-entregue')
-                                echo '<p class="previsao-entrega"><strong>Previsão de entrega:</strong><br>', $previsao, '</p>';
+                            if ($class_venda != 'ja-entregue'){
+                                if (!empty($previsao))
+                                    echo '<p class="previsao-entrega"><strong>Previsão de entrega:</strong><br>', $previsao, '</p>';
+                            }
                             else
                                 echo '<p class="previsao-entrega"><strong>Empreendimento concluído</strong></p>';
         
@@ -67,6 +67,7 @@
                             echo '</div>';
                         }
                         echo '</div>';
+                        bp_getNumericNav();
                     }
                 ?>
                 <div class="clearfix"></div>

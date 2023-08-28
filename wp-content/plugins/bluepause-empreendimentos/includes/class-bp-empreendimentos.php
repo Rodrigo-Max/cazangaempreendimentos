@@ -3,7 +3,7 @@ defined( 'ABSPATH' ) || exit;
 
 class bpEmpreendimentos{
 	protected static $_instance = null;
-	private $_version = '0.0.5';
+	private $_version = '0.0.9';
     private $empreendimento;
 	private $empreendimento_tax;
 

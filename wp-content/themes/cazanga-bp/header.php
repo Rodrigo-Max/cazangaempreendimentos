@@ -9,7 +9,7 @@
     <body>
 <div class="address-top d-none d-lg-block">
     <div class="container">
-        <p class="m-0 text-center"><strong>Atendimento:</strong> <a href="tel:+553733511666">37 3351-1666</a> | <a href="tel:+553799915316">37 99915-3167</a>  •  Rua Jarbas Ferreira Pires, 412 - Lj 02 - Centro, Arcos-MG  •  Acompanhe nossas redes sociais: <a href="https://www.facebook.com/cazangaempreendimentos" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://www.instagram.com/cazangaempreendimentos/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.linkedin.com/company/cazangaempreendimentos/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+        <p class="m-0 text-center"><strong>Atendimento:</strong> <a href="tel:+553733511666">37 3351-1666</a> | <a href="tel:+553799915316">37 99915-3167</a>  •  Av. Dr. João Vaz Sobrinho, nº 40 - trecho 1 - Centro, Arcos-MG  •  Acompanhe nossas redes sociais: <a href="https://www.facebook.com/cazangaempreendimentos" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://www.instagram.com/cazangaempreendimentos/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.linkedin.com/company/cazangaempreendimentos/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
     </div>
 </div>
 <header id="main_header">
