@@ -20,7 +20,7 @@
             </div>
             <div class="col-6 col-md-3">
                 <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/tempo.png" class="d-block img-fluid mx-auto wow animate__rollIn" data-wow-delay="800ms" alt="Vendas" />
-                <p class="text-center mb-5 wow animate__rollIn" data-wow-delay="1000ms"><strong>Mais de 12 anos</strong><br>de mercado</p>
+                <p class="text-center mb-5 wow animate__rollIn" data-wow-delay="1000ms"><strong>Mais de 13 anos</strong><br>de mercado</p>
             </div>
             <div class="col-6 col-md-3">
                 <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/bairros-entregues.png" class="d-block img-fluid mx-auto wow animate__rollIn" data-wow-delay="1200ms" alt="Operações" />

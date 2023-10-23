@@ -30,17 +30,25 @@
                     echo is_front_page() ? '</div>' : ''; // Fim Oculta breadcrumbs na home
                 ?>
                 <div class="entry" itemprop="text">
-                    <div class="row">
-                        <div class="col-12 col-md-7 col-lg-8 col-xl-8">
-                            <p>Com uma trajetória de mais de 13 anos de excelência, a Cazanga Empreendimentos se firma como a principal fomentadora de bairros planejados de Arcos – Minas Gerais.</p>
-                            <p>Nosso compromisso com a qualidade e a confiança é reforçado pelo legado de mais de uma dezena de bairros planejados entregues, que não apenas transformam as vidas das pessoas, mas também impulsionam o crescimento econômico e social.</p>
-                            <p>Desde o início de nossa jornada, buscamos incansavelmente a excelência em cada empreendimento que trazemos à vida. Na Cazanga Empreendimentos, compreendemos que nossos projetos não são apenas loteamentos, mas sim cenários para histórias de vida.&nbsp;</p>
-                            <p>Uma das maneiras pelas quais estabelecemos nossa autoridade é através do nosso compromisso com o sucesso dos nossos clientes. Oferecemos uma vantagem única: o financiamento próprio. Isso não apenas simplifica o processo, mas também demonstra nossa confiança em nossos projetos e no valor que eles agregam às vidas das pessoas.</p>
-                            <p>Nosso compromisso com a qualidade, a inovação e a satisfação do cliente é a base que sustenta nossa autoridade e liderança no mercado.</p>
-                            <p>Se você busca mais do que um loteamento, mas sim uma experiência transformadora, convidamos você a se juntar à família Cazanga. Juntos, continuaremos a construir horizontes, moldar destinos e criar um futuro que todos nós merecemos.</p>
+                    <p>Com uma trajetória de mais de 13 anos de excelência, a Cazanga Empreendimentos se firma como a principal fomentadora de bairros planejados de Arcos – Minas Gerais.</p>
+                    <p>Nosso compromisso com a qualidade e a confiança é reforçado pelo legado de mais de uma dezena de bairros planejados entregues, que não apenas transformam as vidas das pessoas, mas também impulsionam o crescimento econômico e social.</p>
+                    <p>Desde o início de nossa jornada, buscamos incansavelmente a excelência em cada empreendimento que trazemos à vida. Na Cazanga Empreendimentos, compreendemos que nossos projetos não são apenas loteamentos, mas sim cenários para histórias de vida.&nbsp;</p>
+                    <p>Uma das maneiras pelas quais estabelecemos nossa autoridade é através do nosso compromisso com o sucesso dos nossos clientes. Oferecemos uma vantagem única: o financiamento próprio. Isso não apenas simplifica o processo, mas também demonstra nossa confiança em nossos projetos e no valor que eles agregam às vidas das pessoas.</p>
+                    <p>Nosso compromisso com a qualidade, a inovação e a satisfação do cliente é a base que sustenta nossa autoridade e liderança no mercado.</p>
+                    <p>Se você busca mais do que um loteamento, mas sim uma experiência transformadora, convidamos você a se juntar à família Cazanga. Juntos, continuaremos a construir horizontes, moldar destinos e criar um futuro que todos nós merecemos.</p>
+                        
+                    <div class="slick-carousel" id="slick-fotos">
+                        <div class="item">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/sobre/DSC00041.png" class="d-block img-fluid mx-auto" />
                         </div>
-                        <div class="col-12 col-md-5 col-lg-4 col-xl-4">
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/cazanga.jpg" class="d-block mx-auto img-fluid mt-5 mt-md-0" />
+                        <div class="item">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/sobre/DSC00038-2.png" class="d-block img-fluid mx-auto" />
+                        </div>
+                        <div class="item">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/sobre/DSC00029.jpeg" class="d-block img-fluid mx-auto" />
+                        </div>
+                        <div class="item">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/sobre/DSC00028.jpeg" class="d-block img-fluid mx-auto" />
                         </div>
                     </div>
                     <div class="clearfix"></div>

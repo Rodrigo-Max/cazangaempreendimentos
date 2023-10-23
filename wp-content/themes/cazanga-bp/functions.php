@@ -1,5 +1,5 @@
 <?php
-	define('BP_VERSION', '0.0.5');
+	define('BP_VERSION', '0.0.6');
 
 	if ( is_admin() ){
 		require_once('admin/settings.php');
@@ -248,6 +248,7 @@
 
 		
 		wp_register_style('sobre-bp360', get_stylesheet_directory_uri().'/assets/css/sobre.css', false, BP_VERSION);
+		wp_register_script('sobre-bp360', get_stylesheet_directory_uri().'/assets/js/sobre.js', array('jquery'), BP_VERSION, true);
 
 		wp_enqueue_style('bootstrap');
 		wp_enqueue_style('nexa');
@@ -283,6 +284,9 @@
 
 		if (is_page('sobre')){
 			wp_enqueue_style('sobre-bp360');
+			wp_enqueue_style('slick');
+			wp_enqueue_script('slick');
+			wp_enqueue_script('sobre-bp360');
 		}
 		
 		wp_enqueue_script('font-awesome-bp360');

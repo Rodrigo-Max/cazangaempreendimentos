@@ -23,3 +23,10 @@
         height: 505px;
     }
 }
+
+#slick-fotos{margin-top: 50px;}
+#slick-fotos .slick-prev, #slick-fotos .slick-next{position: absolute; top: 50%; margin-top: -15px; width: 40px; height: 40px; cursor: pointer; outline: none; background-color: #fff; color: #183e65; opacity: .6; font-size: 24px; border: 0; padding: 0; text-align: center; line-height: 1; transition: .2s; z-index: 200}
+#slick-fotos .slick-prev:hover, #slick-fotos .slick-next:hover{background-color: #ffff; color: #183e65; opacity: 1;}
+#slick-fotos .slick-prev{left: 0;}
+#slick-fotos .slick-next{right: 0;}
+#slick-fotos .item{padding: 0; margin: 0;}
